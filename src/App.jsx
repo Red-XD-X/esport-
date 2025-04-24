@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import Abouthero from "./components/aboutUS/Abouthero";
 import Aboutus from "./pages/Aboutus";
+import SignUp from "./pages/SignUp";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -23,14 +24,8 @@ function App() {
       <div className="min-h-screen w-full bg-gray-100">
         <Header isAuthenticated={isAuthenticated} />
         <Routes>
-          <Route
-            path="/"
-            element={<Home  />}
-          />
-          <Route
-            path="/aboutus"
-            element={<Aboutus />}
-          />
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutus" element={<Aboutus />} />
           <Route
             path="/contacte"
             element={<Contacte />}
@@ -45,6 +40,7 @@ function App() {
               )
             }
           />
+          <Route path="/signup" element={<SignUp></SignUp>} />
         </Routes>
       </div>
     </Router>
