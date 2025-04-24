@@ -13,7 +13,7 @@ const trendingGames = [
   {
     id: 2,
     name: "Cyberpunk VR",
-    image: "/imgs/image.png",
+    image: "/imgs/projects.png",
     followers: 40,
     category: "RPG",
     description: "Virtual reality set in a dystopian future"
@@ -21,7 +21,7 @@ const trendingGames = [
   {
     id: 3,
     name: "Call of Duty",
-    image: "/imgs/image.png",
+    image: "/imgs/hero.png",
     followers: 40,
     category: "FPS",
     description: "First-person shooter military combat image"
@@ -29,7 +29,7 @@ const trendingGames = [
   {
     id: 4,
     name: "Neon City",
-    image: "/imgs/image.png",
+    image: "/imgs/character.png",
     followers: 40,
     category: "Adventure",
     description: "Open world cyberpunk adventure"
@@ -39,28 +39,22 @@ const trendingGames = [
 export default function TrendingGamesSection() {
   return (
     <div className="bg-indigo-800 w-full py-16 px-6 md:px-16">
-      {/* Header with "See All" button */}
       <div className="flex justify-between items-center mb-10">
         <h2 className="text-white text-2xl font-bold">Currently Trending Games</h2>
         <Link to="/games" className="bg-indigo-700 hover:bg-indigo-600 text-white px-5 py-2 rounded-lg transition-colors">
           SEE ALL
         </Link>
       </div>
-
-      {/* Game Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-20">
         {trendingGames.map((game) => (
           <div key={game.id} className="flex flex-col">
-            {/* Game Image */}
             <div className="rounded-2xl overflow-hidden mb-4">
               <img 
                 src={game.image} 
                 alt={game.name} 
-                className="w-full h-44 object-cover"
+                className="w-full h-80 object-cover"
               />
             </div>
-            
-            {/* Followers Count */}
             <div className="flex items-center text-white gap-2">
               <Flame size={18} className="text-white fill-orange-500" />
               <span>{game.followers} Followers</span>

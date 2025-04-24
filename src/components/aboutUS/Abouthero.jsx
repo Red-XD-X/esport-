@@ -11,7 +11,7 @@ export default function Abouthero() {
     },
     {
       id: 1,
-      src: "/imgs/hero.png",
+      src: "/imgs/projects.png",
       alt: "Second slide image",
     },
   ];
