@@ -1,14 +1,14 @@
 import Footer from "../components/Footer";
+import HomeHero from "../components/Home/HomeHero";
+import RecentProjects from "../components/Home/RecentProjects";
+import TrendingGamesSection from "../components/Home/TrendingGamesSection";
 
-function Home({ isAuthenticated }) {
+function Home() {
   return (
     <>
-      <h1 className="text-2xl font-bold mb-4">Home Page</h1>
-      {isAuthenticated ? (
-        <p>Welcome back! You are signed in.</p>
-      ) : (
-        <p>Welcome! Please sign in to access all features.</p>
-      )}
+  <HomeHero></HomeHero>
+  <TrendingGamesSection />
+  <RecentProjects />
       <Footer></Footer>
     </>
   );
