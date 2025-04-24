@@ -27,7 +27,7 @@ export default function Abouthero() {
   };
 
   return (
-    <section className="flex flex-col lg:flex-row w-full bg-purple-800 text-white">
+    <section className="flex flex-col lg:flex-row w-full bg-indigo-800 text-white px-16">
       {/* Left Content Area */}
       <div className="w-full lg:w-1/2 p-6 lg:p-12 flex flex-col justify-center">
         {/* Breadcrumb Navigation */}

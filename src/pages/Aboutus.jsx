@@ -4,6 +4,7 @@ import Abouthero from '../components/aboutUS/Abouthero'
 import Ourteamhero from '../components/aboutUS/Ourteamhero'
 import Withushero from '../components/aboutUS/Withushero'
 import Intrihero from '../components/aboutUS/Intrihero'
+import Footer from '../components/Footer'
 
 export default function Aboutus() {
   return (
@@ -20,6 +21,7 @@ export default function Aboutus() {
       <Ourteamhero>
 
       </Ourteamhero>
+      <Footer />
     </div>
   )
 }
