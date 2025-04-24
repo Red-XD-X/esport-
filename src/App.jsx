@@ -20,7 +20,6 @@ function App() {
     <Router>
       <div className="min-h-screen w-full bg-gray-100">
         <Header isAuthenticated={isAuthenticated} />
-
         <Routes>
           <Route
             path="/"

@@ -16,12 +16,9 @@ export default function Header() {
   ];
 
   return (
-    <nav className="bg-blue-800 text-white py-4 px-6 md:px-10">
+    <nav className="bg-blue-800 text-white py-4 px-6 md:px-16">
       <div className="flex items-center justify-between">
-        {/* Logo */}
         <div className="font-bold text-2xl tracking-wider">LOGO</div>
-
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
             <a
@@ -38,8 +35,6 @@ export default function Header() {
             </a>
           ))}
         </div>
-
-        {/* Contact Button */}
         <div className="hidden md:block">
           <a
             href="/contact"
@@ -48,8 +43,6 @@ export default function Header() {
             Contact us
           </a>
         </div>
-
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">
             {isMenuOpen ? (
@@ -60,8 +53,6 @@ export default function Header() {
           </button>
         </div>
       </div>
-
-      {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden mt-4 flex flex-col space-y-4 py-4">
           {navLinks.map((link) => (
