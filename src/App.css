@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@import '@mdi/font/css/materialdesignicons.min.css';
 /* Remove padding and centering to allow full width */
 #root {
   margin: 0;

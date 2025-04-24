@@ -25,7 +25,7 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Home isAuthenticated={isAuthenticated} />}
+            element={<Home  />}
           />
           <Route
             path="/aboutus"
