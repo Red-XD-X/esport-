@@ -53,8 +53,15 @@ export default function Header() {
           })}
         </div>
 
-        {/* Contact Button - Desktop */}
-        <div className="hidden md:block">
+        {/* Action Buttons - Desktop */}
+        <div className="hidden md:flex items-center space-x-4">
+          <Link
+            to="/signin"
+            onClick={handleNavClick}
+            className="text-white hover:text-orange-500 px-4 py-2 transition-colors"
+          >
+            Sign In
+          </Link>
           <Link
             to="/contact"
             onClick={handleNavClick}
@@ -99,6 +106,13 @@ export default function Header() {
               </Link>
             );
           })}
+          <Link
+            to="/signin"
+            onClick={handleNavClick}
+            className="text-white py-2 px-4 mx-4 text-center hover:bg-indigo-800 transition-colors"
+          >
+            Sign In
+          </Link>
           <Link
             to="/contact"
             onClick={handleNavClick}

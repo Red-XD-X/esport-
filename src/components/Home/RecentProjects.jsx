@@ -33,18 +33,11 @@ const recentProjects = [
     image: "/imgs/projects.png",
     category: "Entertainment Venue",
   },
-  {
-    id: 6,
-    title: "Gaming Station",
-    image: "/imgs/projects.png",
-    category: "Setup Design",
-  },
 ];
 
 export default function RecentProjects() {
   return (
     <div className="bg-indigo-800 w-full py-16 px-6 md:px-16">
-      {/* Section Header */}
       <div className="text-center mb-4">
         <h2 className="text-white text-3xl font-bold mb-4">
           Our Recent Projects
@@ -87,15 +80,6 @@ export default function RecentProjects() {
           <img
             src={recentProjects[4].image}
             alt={recentProjects[4].title}
-            className="w-full h-48 object-cover"
-          />
-        </div>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        <div className="md:col-start-3 rounded-3xl overflow-hidden">
-          <img
-            src={recentProjects[5].image}
-            alt={recentProjects[5].title}
             className="w-full h-48 object-cover"
           />
         </div>
