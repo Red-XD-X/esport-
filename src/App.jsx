@@ -8,6 +8,8 @@ import {
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
+import Abouthero from "./components/aboutUS/Abouthero";
+import Aboutus from "./pages/Aboutus";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -24,6 +26,10 @@ function App() {
           <Route
             path="/"
             element={<Home isAuthenticated={isAuthenticated} />}
+          />
+          <Route
+            path="/aboutus"
+            element={<Aboutus />}
           />
           <Route
             path="/signin"
