@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +9,6 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Close menu when navigating to a new page
   const handleNavClick = () => {
     if (isMenuOpen) {
       setIsMenuOpen(false);
@@ -17,31 +16,33 @@ export default function Header() {
   };
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About us', path: '/aboutus' },
-    { name: 'Portfolio', path: '/portfolio' },
-    { name: 'News', path: '/news' },
+    { name: "Home", path: "/" },
+    { name: "About us", path: "/aboutus" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: "News", path: "/news" },
   ];
 
   return (
     <nav className="bg-indigo-900 py-4 px-6 md:px-16">
       <div className="flex items-center justify-between">
-        <div className="font-bold text-2xl tracking-wider text-white">SWIFT</div>
-
-        {/* Desktop Navigation */}
+        <div className="font-bold text-2xl tracking-wider text-white">
+          SWIFT
+        </div>
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => {
-            // Check if current path matches this nav link
-            const isActive = location.pathname === link.path || 
-                            (location.pathname === '' && link.path === '/');
-            
+            const isActive =
+              location.pathname === link.path ||
+              (location.pathname === "" && link.path === "/");
+
             return (
               <Link
                 key={link.name}
                 to={link.path}
                 onClick={handleNavClick}
                 className={`relative px-1 py-2 transition-colors ${
-                  isActive ? 'text-orange-500 font-medium' : 'text-white hover:text-gray-200'
+                  isActive
+                    ? "text-orange-500 font-medium"
+                    : "text-white hover:text-gray-200"
                 }`}
               >
                 {link.name}
@@ -52,21 +53,27 @@ export default function Header() {
             );
           })}
         </div>
-
-        {/* Contact Button - Desktop */}
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center space-x-4">
           <Link
-            to="/contact"
+            to="/signin"
+            onClick={handleNavClick}
+            className="text-white hover:text-orange-500 px-4 py-2 transition-colors"
+          >
+            Sign In
+          </Link>
+          <Link
+            to="/contactus"
             onClick={handleNavClick}
             className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-colors"
           >
             Contact us
           </Link>
         </div>
-
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="focus:outline-none text-white">
+          <button
+            onClick={toggleMenu}
+            className="focus:outline-none text-white"
+          >
             {isMenuOpen ? (
               <i className="mdi mdi-close text-2xl"></i>
             ) : (
@@ -75,21 +82,22 @@ export default function Header() {
           </button>
         </div>
       </div>
-
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden mt-4 flex flex-col space-y-4 py-4">
           {navLinks.map((link) => {
-            const isActive = location.pathname === link.path || 
-                            (location.pathname === '' && link.path === '/');
-                            
+            const isActive =
+              location.pathname === link.path ||
+              (location.pathname === "" && link.path === "/");
+
             return (
               <Link
                 key={link.name}
                 to={link.path}
                 onClick={handleNavClick}
                 className={`block py-2 px-4 ${
-                  isActive ? 'bg-indigo-800 text-orange-500 font-medium' : 'text-white'
+                  isActive
+                    ? "bg-indigo-800 text-orange-500 font-medium"
+                    : "text-white"
                 }`}
               >
                 {link.name}
@@ -100,7 +108,14 @@ export default function Header() {
             );
           })}
           <Link
-            to="/contact"
+            to="/signin"
+            onClick={handleNavClick}
+            className="text-white py-2 px-4 mx-4 text-center hover:bg-indigo-800 transition-colors"
+          >
+            Sign In
+          </Link>
+          <Link
+            to="/contactus"
             onClick={handleNavClick}
             className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 mx-4 text-center rounded-md transition-colors"
           >
