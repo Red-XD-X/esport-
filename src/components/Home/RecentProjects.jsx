@@ -54,10 +54,7 @@ export default function RecentProjects() {
           industry.
         </p>
       </div>
-
-      {/* Projects Grid - Special Layout */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        {/* First Row - 3 equal sized items */}
         <div className="rounded-3xl overflow-hidden">
           <img
             src={recentProjects[0].image}
@@ -79,8 +76,6 @@ export default function RecentProjects() {
             className="w-full h-48 md:h-64 object-cover"
           />
         </div>
-
-        {/* Second Row - 3 items with different sizes */}
         <div className="rounded-3xl overflow-hidden">
           <img
             src={recentProjects[3].image}
@@ -96,8 +91,6 @@ export default function RecentProjects() {
           />
         </div>
       </div>
-
-      {/* Bottom Row has a single wider item - using the last image */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         <div className="md:col-start-3 rounded-3xl overflow-hidden">
           <img
@@ -107,8 +100,6 @@ export default function RecentProjects() {
           />
         </div>
       </div>
-
-      {/* See All Button */}
       <div className="flex justify-center mt-10">
         <Link
           to="/projects"

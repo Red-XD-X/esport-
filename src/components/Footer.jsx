@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container  px-16 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold">LOGO</h2>
+            <h2 className="text-2xl font-bold">SWIFT</h2>
             <p className="text-gray-300">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
@@ -16,13 +16,7 @@ export default function Footer() {
             <h3 className="text-xl font-semibold">About us</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Zeux</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Portfolio</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Careers</a>
+                <a href="#" className="text-gray-300 hover:text-white transition-colors">News</a>
               </li>
               <li>
                 <a href="#" className="text-gray-300 hover:text-white transition-colors">Contact us</a>
@@ -34,7 +28,7 @@ export default function Footer() {
             <p className="text-gray-300">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
-            <p className="text-gray-300">+908 89097 890</p>
+            <p className="text-gray-300">+216 28117867</p>
             <div className="flex space-x-4 pt-4">
               <a href="#" className="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors">
                 <Facebook size={20} />
@@ -54,7 +48,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-6 py-4 text-center text-gray-400 text-sm">
-          Copyright © 2022 prodesigner All rights Rcerved
+          Copyright © 2025 SWIFT All rights Rcerved
         </div>
       </div>
     </footer>

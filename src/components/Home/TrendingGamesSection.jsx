@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Flame } from 'lucide-react';
-
-// Sample games data array with all required properties
 const trendingGames = [
   {
     id: 1,

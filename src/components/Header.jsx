@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <nav className="bg-indigo-900 py-4 px-6 md:px-16">
       <div className="flex items-center justify-between">
-        <div className="font-bold text-2xl tracking-wider text-white">LOGO</div>
+        <div className="font-bold text-2xl tracking-wider text-white">SWIFT</div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
