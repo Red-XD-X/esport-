@@ -32,6 +32,10 @@ function App() {
             element={<Aboutus />}
           />
           <Route
+            path="/contacte"
+            element={<Contacte />}
+          />
+          <Route
             path="/signin"
             element={
               isAuthenticated ? (
