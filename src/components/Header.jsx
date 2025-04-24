@@ -9,10 +9,11 @@ export default function Header() {
   };
 
   const navLinks = [
-    { name: 'Home', path: '/', active: false },
+    { name: 'Home', path: '/', active: true },
     { name: 'About us', path: '/about', active: false },
-    { name: 'Portfolio', path: '/portfolio', active: true },
     { name: 'News', path: '/news', active: false },
+    { name: 'Contact us', path: '/news', active: false },
+
   ];
 
   return (
